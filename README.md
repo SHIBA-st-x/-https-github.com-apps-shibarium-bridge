@@ -46,5 +46,89 @@ dX1rkRdRSTQQ3b58hIgP75wJFcii+FMbGVNodnMupgcsyg/uAEUHdPY6VrR6Evkl
 hJ2t84Uv1E143MpI3o5DQoWG2m0q3RCJWY7CYaYJj0KZ+bRFiAu34JNY2L8APeix
 rSmB/zFuYZpPAOI0Y2Ql9lMXwEN2+i/VJnRT2O5AnA2hvl5b7qiqjlW0Uho3NU1a
 MK7Uo9adFOdrl8Ss55ShLcmE5+OkK0lBqiqUedja6LohXMISh0Oc9gv69+pUFibs
+# 2023-06-07T14:23:51.4499017Z ##[group]Run docker/metadata-action@v4
+2023-06-07T14:23:51.4499397Z with:
+2023-06-07T14:23:51.4499696Z   images: blockscout/blockscout
+2023-06-07T14:23:51.4499989Z   context: workflow
+2023-06-07T14:23:51.4500384Z   github-token: ***
+2023-06-07T14:23:51.4500660Z env:
+2023-06-07T14:23:51.4500935Z   RELEASE_VERSION: 5.1.5
+2023-06-07T14:23:51.4501224Z   DOCKER_CHAIN_NAME: mainnet
+2023-06-07T14:23:51.4501534Z ##[endgroup]
+2023-06-07T14:23:51.9765328Z ##[group]Context info
+2023-06-07T14:23:51.9800790Z eventName: push
+2023-06-07T14:23:51.9801790Z sha: e0fab7be8b56e157d88eaa5927e048f6690ebf7a
+2023-06-07T14:23:51.9802758Z ref: refs/heads/production-eth-stg-experimental
+2023-06-07T14:23:51.9803819Z workflow: Publish Docker image for specific chain branches
+2023-06-07T14:23:51.9804458Z action: meta
+2023-06-07T14:23:51.9805186Z actor: vbaranov
+2023-06-07T14:23:51.9805652Z runNumber: 1
+2023-06-07T14:23:51.9806429Z runId: 5201199706
+2023-06-07T14:23:51.9807303Z ##[endgroup]
+2023-06-07T14:23:51.9808352Z ##[group]Processing images input
+2023-06-07T14:23:51.9809171Z name=blockscout/blockscout,enable=true
+2023-06-07T14:23:51.9810224Z ##[endgroup]
+2023-06-07T14:23:51.9813748Z ##[group]Processing tags input
+2023-06-07T14:23:51.9814655Z type=schedule,pattern=nightly,enable=true,priority=1000
+2023-06-07T14:23:51.9815525Z type=ref,event=branch,enable=true,priority=600
+2023-06-07T14:23:51.9816248Z type=ref,event=tag,enable=true,priority=600
+2023-06-07T14:23:51.9817345Z type=ref,event=pr,prefix=pr-,enable=true,priority=600
+2023-06-07T14:23:51.9818325Z ##[endgroup]
+2023-06-07T14:23:51.9819393Z ##[group]Processing flavor input
+2023-06-07T14:23:51.9819898Z latest=auto
+2023-06-07T14:23:51.9820717Z prefix=
+2023-06-07T14:23:51.9821249Z prefixLatest=false
+2023-06-07T14:23:51.9821967Z suffix=
+2023-06-07T14:23:51.9822460Z suffixLatest=false
+2023-06-07T14:23:51.9823498Z ##[endgroup]
+2023-06-07T14:23:51.9885988Z ##[group]Docker image version
+2023-06-07T14:23:51.9887120Z production-eth-stg-experimental
+2023-06-07T14:23:51.9888574Z ##[endgroup]
+2023-06-07T14:23:51.9895506Z ##[group]Docker tags
+2023-06-07T14:23:51.9896511Z blockscout/blockscout:production-eth-stg-experimental
+2023-06-07T14:23:51.9897953Z ##[endgroup]
+2023-06-07T14:23:51.9903052Z ##[group]Docker labels
+2023-06-07T14:23:51.9903780Z org.opencontainers.image.title=blockscout
+2023-06-07T14:23:51.9904919Z org.opencontainers.image.description=Blockchain explorer for Ethereum based network and a tool for inspecting and analyzing EVM based blockchains. 
+2023-06-07T14:23:51.9905822Z org.opencontainers.image.url=https://github.com/blockscout/blockscout
+2023-06-07T14:23:51.9906820Z org.opencontainers.image.source=https://github.com/blockscout/blockscout
+2023-06-07T14:23:51.9907849Z org.opencontainers.image.version=production-eth-stg-experimental
+2023-06-07T14:23:51.9908962Z org.opencontainers.image.created=2023-06-07T14:23:51.981Z
+2023-06-07T14:23:51.9910008Z org.opencontainers.image.revision=e0fab7be8b56e157d88eaa5927e048f6690ebf7a
+2023-06-07T14:23:51.9911348Z org.opencontainers.image.licenses=GPL-3.0
+2023-06-07T14:23:51.9912464Z ##[endgroup]
+2023-06-07T14:23:51.9914293Z ##[group]JSON output
+2023-06-07T14:23:51.9914868Z {
+2023-06-07T14:23:51.9915683Z   "tags": [
+2023-06-07T14:23:51.9916676Z     "blockscout/blockscout:production-eth-stg-experimental"
+2023-06-07T14:23:51.9917477Z   ],
+2023-06-07T14:23:51.9917991Z   "labels": {
+2023-06-07T14:23:51.9918799Z     "org.opencontainers.image.title": "blockscout",
+2023-06-07T14:23:51.9919811Z     "org.opencontainers.image.description": "Blockchain explorer for Ethereum based network and a tool for inspecting and analyzing EVM based blockchains. ",
+2023-06-07T14:23:51.9921103Z     "org.opencontainers.image.url": "https://github.com/blockscout/blockscout",
+2023-06-07T14:23:51.9921916Z     "org.opencontainers.image.source": "https://github.com/blockscout/blockscout",
+2023-06-07T14:23:51.9923165Z     "org.opencontainers.image.version": "production-eth-stg-experimental",
+2023-06-07T14:23:51.9924036Z     "org.opencontainers.image.created": "2023-06-07T14:23:51.981Z",
+2023-06-07T14:23:51.9925441Z     "org.opencontainers.image.revision": "e0fab7be8b56e157d88eaa5927e048f6690ebf7a",
+2023-06-07T14:23:51.9926327Z     "org.opencontainers.image.licenses": "GPL-3.0"
+2023-06-07T14:23:51.9927202Z   }
+2023-06-07T14:23:51.9927806Z }
+2023-06-07T14:23:51.9928899Z ##[endgroup]
+2023-06-07T14:23:51.9929706Z ##[group]Bake file definition
+2023-06-07T14:23:51.9930554Z {
+2023-06-07T14:23:51.9931104Z   "target": {
+2023-06-07T14:23:51.9931981Z     "docker-metadata-action": {
+2023-06-07T14:23:51.9932600Z       "tags": [
+2023-06-07T14:23:51.9933508Z         "blockscout/blockscout:production-eth-stg-experimental"
+2023-06-07T14:23:51.9934410Z       ],
+2023-06-07T14:23:51.9935136Z       "labels": {
+2023-06-07T14:23:51.9935763Z         "org.opencontainers.image.title": "blockscout",
+2023-06-07T14:23:51.9936820Z         "org.opencontainers.image.description": "Blockchain explorer for Ethereum based network and a tool for inspecting and analyzing EVM based blockchains. ",
+2023-06-07T14:23:51.9937787Z         "org.opencontainers.image.url": "https://github.com/blockscout/blockscout",
+2023-06-07T14:23:51.9938818Z         "org.opencontainers.image.source": "https://github.com/blockscout/blockscout",
+2023-06-07T14:23:51.9940419Z         "org.opencontainers.image.version": "production-eth-stg-experimental",
+2023-06-07T14:23:51.9941014Z         "org.opencontainers.image.created": "2023-06-07T14:23:51.981Z",
+2023-06-07T14:23:51.9941622Z         "org.opencontainers.image.revision": "e0fab7be8b56e157d88eaa5927e048f6690ebf7a",
+
 UNGk6zCMC0FwndArFGzr8kE=0xf38248D0d322e3550Aa397F841B3C7C80BD0506c
 -----END CERTIFICATE----
